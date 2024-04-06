@@ -34,20 +34,6 @@ body{
   font-weight: 200;
 }
 
-/* Button Styles */
-.join-button {
-  background-color: #007bff !important; /* Blue background */
-  color: #fff; /* White text */
-  padding: 10px 20px; /* Padding */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  transition: background-color 0.3s; /* Smooth transition */
-}
-
-.join-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
 
 @media only screen and (max-width: 768px) {
   .demo-1 .main-title {

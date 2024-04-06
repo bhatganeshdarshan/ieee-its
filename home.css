@@ -1,16 +1,16 @@
-/* Button Styles */
+
 .join-button {
-    background-color: #007bff; /* Blue background */
-    color: #fff; /* White text */
-    padding: 10px 20px; /* Padding */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: #fff; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #007bff !important;
+    color: #fff;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: #fff; 
+    transition: background-color 0.3s;
     font-weight: bold;
   }
   
   .join-button:hover {
-    background-color: #0056b3 !important; /* Darker blue on hover */
+    background-color: #0056b3 !important; 
   }
 
   
