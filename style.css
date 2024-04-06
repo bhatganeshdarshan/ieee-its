@@ -12,7 +12,7 @@ body{
   z-index: 1;
 }
 #large-header {
-  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+  background-image: url("./its_web_background.jpg");
 }
 .main-title {
   position: absolute;
@@ -24,7 +24,22 @@ body{
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.wlc{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: antiquewhite;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-family: cursive;
+}
+
 .demo-1 .main-title {
   text-transform: uppercase;
   font-size: 4.2em;
@@ -32,6 +47,84 @@ body{
 }
 .main-title .thin {
   font-weight: 200;
+}
+
+.know-btn{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper{
+  position: relative;
+  padding-top: 250px;
+}
+
+.my-btn-text{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid rgba(139, 147, 255, 1);
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  right: 0;
+  top: 250px;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: rgba(139, 147, 255, 1);
+  transition: all .35s;
+}
+
+.my-btn-text:hover{
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+.my-btn-text:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+.my-btn-text:hover + .icon svg{
+  fill: #2ecc71 !important;
 }
 
 
