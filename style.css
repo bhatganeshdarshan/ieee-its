@@ -69,18 +69,10 @@ p, .paragraph {
   box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.3);
 }
 
-/* Optimize responsive typography */
-@media screen and (max-width: 768px) {
-  html {
-      font-size: 14px; 
-  }
-  .demo-1 .main-title {
-      font-size: 3em; 
-  }
-  p {
-      font-size: 0.75em; 
-  }
+.navbar-home{
+  transition: top 0.3s;
 }
+
 
 /* HEADER */
 
@@ -117,6 +109,7 @@ p, .paragraph {
 .large-header {
   position: relative;
   width: 100%;
+  height: 60vh !important;
   background: #030303;
   overflow: hidden;
   background-size: cover;
@@ -124,9 +117,30 @@ p, .paragraph {
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+      font-size: 14px; 
+  }
+  .demo-1 .main-title {
+      font-size: 3em; 
+  }
+  p {
+      font-size: 0.75em; 
+  }
+}
+
+
+
+@media only screen and (min-width : 990px) {
+  .large-header.header-home{
+    height: 100vh !important;
+  }
+}
+
 .navbar-brand{
   font-size: 30px !important;
 }
+
 
 #demo-canvas {
   display: block;
@@ -321,8 +335,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 @media only screen and (max-width: 768px) {
+  .nav-items{
+    font-size: x-large;
+  }
+  .large-header{
+    height: 65vh !important;
+  }
   .demo-1 .main-title .page-descr{
     font-size: 2em;
   }
@@ -351,6 +370,7 @@ h1, h2, h3, h4, h5, h6 {
   .hover-shadow{
     box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15)
   }
+
   .large-header-2{
     height: 40vh !important;
   }
