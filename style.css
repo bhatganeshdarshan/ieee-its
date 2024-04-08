@@ -66,7 +66,7 @@ p, .paragraph {
   transition: 0.3s ease;
 }
 .hover-shadow:hover {
-  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
+  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.3);
 }
 
 /* Optimize responsive typography */
@@ -269,20 +269,6 @@ p, .paragraph {
 .section-title {
   margin-bottom: 30px;
 }
-.custom-breadcrumb li.nasted {
-  position: relative;
-  padding-left: 25px;
-}
-.custom-breadcrumb li.nasted::before {
-  position: absolute;
-  font-family: "themify";
-  content: "\e649";
-  font-size: 20px;
-  top: 50%;
-  left: -5px;
-  color: #fff;
-  transform: translateY(-50%);
-}
 
 h1, h2, h3, h4, h5, h6 {
   color: #1e1e4b;
@@ -290,6 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
 }
+
 
 .card-date {
   position: absolute;
@@ -311,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-img-top{
-  height: auto;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
