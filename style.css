@@ -60,11 +60,12 @@ h1 {
   filter: brightness(90%) saturate(80%); 
 }
 
-#large-header-2{
+.large-header-2{
   background-image: url("./its_web_background.jpg");
   background-color: rgba(191, 255, 108, 0.5);
   filter: brightness(90%) saturate(80%); 
-  height: 75%;
+  background-size: cover !important;
+  height: 65vh !important;
 }
 .main-title {
   position: absolute;
@@ -97,18 +98,21 @@ h1 {
   margin-bottom: 20px; 
 }
 
-.wlc{
+.page-descr{
   position: absolute;
   margin: 0;
   padding: 0;
-  
-  color: rgb(243, 238, 233);
+  color: hsl(251, 55%, 94%);
   text-align: center;
-  top: 35%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  transition: text-shadow 0.3s ease-in-out;
+  margin-bottom: 20px; 
 }
 
 .demo-1 .main-title {
@@ -118,6 +122,11 @@ h1 {
 }
 .main-title .thin {
   font-weight: 200;
+}
+
+.page-descr .thin{
+  font-weight: 200;
+  font-size: 40px;
 }
 
 .know-btn{
@@ -220,8 +229,12 @@ h1 {
 
 
 @media only screen and (max-width: 768px) {
-  .demo-1 .main-title {
-    font-size: 3em;
+  .demo-1 .main-title .page-descr{
+    font-size: 2em;
+  }
+  .page-descr{
+    left: 35%;
+    top: 65%;
   }
 }
 
