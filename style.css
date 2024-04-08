@@ -59,6 +59,13 @@ h1 {
   background-color: rgba(191, 255, 108, 0.5);
   filter: brightness(90%) saturate(80%); 
 }
+
+#large-header-2{
+  background-image: url("./its_web_background.jpg");
+  background-color: rgba(191, 255, 108, 0.5);
+  filter: brightness(90%) saturate(80%); 
+  height: 75%;
+}
 .main-title {
   position: absolute;
   margin: 0;
