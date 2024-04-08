@@ -1,6 +1,7 @@
 
+
 html {
-  font-size: 16px; 
+  font-size: 17px; 
 }
 
 body{
@@ -95,6 +96,7 @@ p, .paragraph {
   filter: brightness(90%) saturate(80%); 
   background-size: cover !important;
   height: 65vh !important;
+
 }
 .main-title {
   position: absolute;
@@ -332,6 +334,31 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 654px){
   .hover-shadow{
     box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15)
+  }
+  .large-header-2{
+    height: 50vh !important;
+  }
+  .page-descr {
+    font-size: 3rem;
+  }
+  .page-descr .thin{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 482px){
+  .hover-shadow{
+    box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15)
+  }
+  .large-header-2{
+    height: 40vh !important;
+  }
+  .page-descr {
+    font-size: 3rem;
+  }
+  .page-descr .thin{
+    font-size: 18px;
+    font-weight: 300;
   }
 }
 
