@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITS - About</title>
+    <title>ITS - Upcoming Events</title>
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:100,200,300,400" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'><link rel="stylesheet" href="./style.css">
@@ -15,16 +15,43 @@
                 $('#navbar-placeholder').load('navbar.html');
             });
         </script>
+        <script>
+            $(function() {
+                 setTimeout(function(){
+                $('body').removeClass('loading');
+                }, 1000);
+});
+        </script>
 </head>
-<body>
+<body class="loading">
     
     <div id="navbar-placeholder"></div>
     <div id="large-header" class="large-header large-header-2">
 
         <!-- Mouse hover effect -->
         <canvas id="demo-canvas"></canvas>
-        <h1 class="page-descr">Home<span class="thin"> > About Us</span></h1>         
+        <h1 class="page-descr">Home<span class="thin"> > Upcoming Events</span></h1>         
       </div>
+      <h1 class="header-main">OOPS !</h1>
+      <h2 class="header-sec">Currently there are no upcoming events<b>:(</b></h2>
+      <div class="gears">
+        <div class="gear one">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="gear two">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="gear three">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
     <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
